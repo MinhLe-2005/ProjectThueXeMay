@@ -1,0 +1,451 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 29 thg 6, 2024, 09:37:55
+    Author     : MINH TUAN
+*/
+#tudienjp * :not(svg, path) {
+    all: revert
+}
+
+#tudienjp svg {
+    width: auto !important
+}
+
+#tudienjp {
+    font-size: 18px !important;
+    font-family: sans-serif;
+    color: #000 !important;
+    line-height: 1.5 !important;
+    text-align: left !important
+}
+
+#tudienjp .o-result-item {
+    line-height: 1.5;
+    display: block;
+    margin-right: 0;
+    cursor: pointer
+}
+
+#tudienjp .o-result-item:hover {
+    border-color: #c6d6ef !important
+}
+
+#tudienjp .o-selected-result {
+    max-height: 300px;
+    overflow-y: scroll
+}
+
+#tudienjp .o-selected-result::-webkit-scrollbar {
+    width: 13px
+}
+
+#tudienjp .o-selected-result::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 3px 0 0 3px #fff;
+    background: rgba(0, 0, 0, .2)
+}
+
+#tudienjp .o-pop-nav div {
+    font-size: 14px;
+    padding: 3.2px 8px
+}
+
+#tudienjp .o-pop-speak {
+    margin-top: 5px;
+    margin-right: 8px;
+    font-size: 16px;
+    cursor: pointer
+}
+
+#tudienjp .o-search-mobile {
+    z-index: 99998;
+    position: absolute;
+    display: none
+}
+
+#tudienjp .o-popup-tag {
+    z-index: 99999;
+    position: absolute;
+    display: none;
+    padding: 10px 5px 10px 10px
+}
+
+#tudienjp .o-bg-white {
+    background-color: #fff !important
+}
+
+#tudienjp .o-border {
+    border: 1px solid #dee2e6 !important
+}
+
+#tudienjp .o-rounded {
+    border-radius: 4px !important
+}
+
+#tudienjp .o-shadow {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .15) !important
+}
+
+#tudienjp .o-btn-close {
+    box-sizing: content-box;
+    width: 16px;
+    height: 16px;
+    padding: 4px 4px;
+    color: #000;
+    background: transparent url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3E%3C/svg%3E") 50%/16px auto no-repeat;
+    border: 0;
+    border-radius: 4px;
+    opacity: .5;
+    cursor: pointer
+}
+
+#tudienjp .o-btn-close:hover {
+    opacity: .75
+}
+
+#tudienjp .o-me-1 {
+    margin-right: 4px !important
+}
+
+#tudienjp .o-end-0 {
+    right: 0 !important
+}
+
+#tudienjp .o-top-0 {
+    top: 0 !important
+}
+
+#tudienjp .o-position-absolute {
+    position: absolute !important
+}
+
+#tudienjp ul {
+    padding-left: 32px;
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 16px;
+    margin-block-start: 16px;
+    -webkit-margin-after: 16px;
+    margin-block-end: 16px;
+    -webkit-margin-start: 0;
+    margin-inline-start: 0;
+    -webkit-margin-end: 0;
+    margin-inline-end: 0;
+    -webkit-padding-start: 40px;
+    padding-inline-start: 40px
+}
+
+#tudienjp .o-pt-1 {
+    padding-top: 4px !important
+}
+
+#tudienjp .mark,
+#tudienjp mark {
+    padding: 0 !important;
+    background-color: #ffffe0 !important
+}
+
+#tudienjp .o-mt-1 {
+    margin-top: 4px !important
+}
+
+#tudienjp .o-p-2 {
+    padding: 8px !important
+}
+
+#tudienjp .o-mb-1 {
+    margin-bottom: 4px !important
+}
+
+#tudienjp .o-border-3 {
+    border-width: 3px !important
+}
+
+#tudienjp .o-text-secondary {
+    color: #6c757d !important
+}
+
+#tudienjp .o-text-primary {
+    cursor: pointer;
+    color: #0d6efd
+}
+
+#tudienjp .o-text-primary:hover {
+    text-decoration: underline
+}
+
+#tudienjp .o-w-100 {
+    width: 100% !important
+}
+
+#tudienjp .o-link-danger {
+    color: #dc3545
+}
+
+#tudienjp .o-link-danger:hover {
+    color: #0d6efd
+}
+
+#tudienjp .o-link-ah:hover {
+    color: #dc3545
+}
+
+#tudienjp .o-text-decoration-none {
+    text-decoration: none !important
+}
+
+#tudienjp .o-fs-6,
+#tudienjp .o-small {
+    font-size: 16px !important
+}
+
+#tudienjp .o-ms-1 {
+    margin-left: 4px !important
+}
+
+#tudienjp .o-mt-2 {
+    margin-top: 8px !important
+}
+
+#tudienjp .o-float-start {
+    float: left !important
+}
+
+#tudienjp label {
+    display: inline-block
+}
+
+#tudienjp .o-float-end {
+    float: right !important
+}
+
+#tudienjp .o-link-secondary {
+    color: #6c757d !important
+}
+
+#tudienjp .o-result-item .o-inflect {
+    font-size: 14px;
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+#tudienjp .o-nav-tabs {
+    border-bottom: 1px solid #dee2e6
+}
+
+#tudienjp .o-nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none
+}
+
+#tudienjp ul {
+    margin-top: 0;
+    margin-bottom: 16px
+}
+
+#tudienjp li {
+    display: list-item;
+    text-align: -webkit-match-parent
+}
+
+#tudienjp .o-nav-tabs .o-nav-item.show .o-nav-link,
+#tudienjp .o-nav-tabs .o-nav-link.active {
+    color: #495057;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff
+}
+
+#tudienjp .o-nav-link {
+    display: block;
+    padding: 8px 16px;
+    color: #0d6efd;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    cursor: pointer
+}
+
+#tudienjp .o-nav-tabs .o-nav-link {
+    margin-bottom: -1px;
+    background: 0 0;
+    border: 1px solid transparent;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    line-height: 1.5
+}
+
+#tudienjp svg:not(:host).o-svg-inline--fa,
+#tudienjp svg:not(:root).o-svg-inline--fa {
+    overflow: visible;
+    box-sizing: content-box
+}
+
+#tudienjp .o-svg-inline--fa {
+    display: inline-block;
+    height: 16px;
+    overflow: visible;
+    vertical-align: -2px
+}
+
+#tudienjp .o-form-check {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.5em;
+    margin-bottom: 0
+}
+
+#tudienjp .o-form-check-input {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    width: 1em;
+    height: 1em;
+    margin-top: .25em;
+    vertical-align: top;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    border: 1px solid rgba(0, 0, 0, .25);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-print-color-adjust: exact;
+    float: left;
+    margin-left: -1.5em;
+    border-radius: .25em
+}
+
+#tudienjp .o-form-check-input:before {
+    content: ""
+}
+
+#tudienjp .o-form-check-input:checked[type=checkbox] {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3 6-6'/%3E%3C/svg%3E")
+}
+
+#tudienjp del {
+    color: #6c757d !important
+}
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translate(50%, -50%) scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0%, 0%) scale(1);
+    }
+}
+
+@keyframes modalFadeOut {
+    from {
+        opacity: 1;
+        transform: translate(0%, 0%) scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: translate(50%, -50%) scale(0.8);
+    }
+}
+
+#editProfileModal {
+    animation: modalFadeIn 0.3s ease-out forwards;
+}
+
+#editProfileModal {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease-out, box-shadow 0.3s ease-out;
+}
+
+#editProfileModal:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+#editProfileModal form {
+    transition: transform 0.2s ease-out;
+}
+
+#editProfileModal form:hover {
+    transform: translateY(-4px);
+}
+
+.font-display {
+    font-family: inherit;
+}
+
+.font-body {
+    font-family: inherit;
+}
+
+/* Simplified Sidebar */
+.sidebar-item {
+    padding: 0.75rem 1rem !important;
+    margin: 0.2rem 1rem !important;
+    display: flex !important;
+    align-items: center !important;
+    border-radius: 0.5rem !important;
+    transition: all 0.2s ease !important;
+    color: #1e293b !important; /* Dark Slate-800 for absolute contrast */
+    font-weight: 700 !important; /* Bold, highly readable */
+    font-size: 0.95rem !important; /* Slightly larger */
+    text-decoration: none !important;
+}
+.sidebar-item:hover {
+    background-color: #f1f5f9 !important;
+    color: #0f172a !important; /* Slate-900 */
+}
+.sidebar-item.active {
+    background-color: #fdf8eb !important; /* very light gold */
+    color: #854d0e !important; /* Deep Golden Amber for maximum readability */
+    font-weight: 800 !important;
+}
+.icon-box {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-right: 1rem !important;
+    width: 32px !important;
+    height: 32px !important;
+    border-radius: 0.5rem !important;
+    background-color: #e2e8f0 !important; /* Deeper gray for contrast */
+    color: #334155 !important; /* Slate-700 */
+    transition: all 0.2s ease !important;
+}
+.sidebar-item.active .icon-box {
+    background-color: #b59349 !important;
+    color: #ffffff !important;
+}
+.nav-text {
+    font-size: 0.95rem !important;
+}
+.sidebar-heading {
+    padding-left: 1.5rem !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    font-size: 0.8rem !important; /* Slightly larger */
+    color: #475569 !important; /* Slate-600 */
+    margin-top: 1.5rem !important;
+    margin-bottom: 0.5rem !important;
+    letter-spacing: 0.05em !important;
+}
