@@ -23,6 +23,7 @@ public class VerifyEmailHandler extends HttpServlet {
         if(AccountID != -9999) {
             HttpSession session = request.getSession();
             session.setAttribute("idhander", AccountID);
+            dao.deleteToken(token);
 //            request.setAttribute("email", email);
             request.getRequestDispatcher("resetPassword.jsp").forward(request, response);
 //            try (PrintWriter out = response.getWriter()) {
