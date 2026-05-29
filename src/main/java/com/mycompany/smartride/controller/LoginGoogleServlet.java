@@ -1,4 +1,4 @@
-
+//logout where
 package com.mycompany.smartride.controller;
 
 import com.mycompany.smartride.constant.GoogleLogin;
