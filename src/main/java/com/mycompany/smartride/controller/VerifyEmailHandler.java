@@ -23,7 +23,6 @@ public class VerifyEmailHandler extends HttpServlet {
         if(AccountID != -9999) {
             HttpSession session = request.getSession();
             session.setAttribute("idhander", AccountID);
-            dao.deleteToken(token);
 //            request.setAttribute("email", email);
             request.getRequestDispatcher("resetPassword.jsp").forward(request, response);
 //            try (PrintWriter out = response.getWriter()) {
@@ -36,14 +35,14 @@ public class VerifyEmailHandler extends HttpServlet {
 //                    out.println("</form>");
 //                    out.println("</body></html>");
 //                }
-            } else {
-                try (PrintWriter out = response.getWriter()) {
-                    out.println("<html><body>");
-                    out.println("<h3>Session has expired or is invalid</h3>");
-                    out.println("</body></html>");
-                }
+        } else {
+            try (PrintWriter out = response.getWriter()) {
+                out.println("<html><body>");
+                out.println("<h3>Session has expired or is invalid</h3>");
+                out.println("</body></html>");
             }
         }
+    }
 
 
     @Override
