@@ -125,7 +125,7 @@ public class AccountDAO implements Serializable {
     }
 
     public boolean createToken(String token, String email) {
-        Timestamp expiration = new Timestamp(System.currentTimeMillis() + 1 * 60 * 1000); // 1 phút
+        Timestamp expiration = new Timestamp(System.currentTimeMillis() + 5 * 60 * 1000); // 5 phút
         String checkEmailSql = "SELECT COUNT(*) FROM \"Account\" WHERE \"Email\" = ?";
         String insertTokenSql = "INSERT INTO \"PasswordResetToken\" (\"Email\", \"Token\", \"Expiration\", \"AccountID\") "
                 + "SELECT \"Email\", ?, ?, \"AccountID\" FROM \"Account\" WHERE \"Email\" = ?";
@@ -157,7 +157,7 @@ public class AccountDAO implements Serializable {
 
     public int getAccountIdByToken(String token) {
         ResultSet rs;
-        String sql = "SELECT \"AccountID\" FROM \"PasswordResetToken\" WHERE \"Token\" = ?";
+        String sql = "SELECT \"AccountID\" FROM \"PasswordResetToken\" WHERE \"Token\" = ? AND \"Expiration\" > NOW()";
         try {
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setString(1, token);
@@ -169,6 +169,17 @@ public class AccountDAO implements Serializable {
             System.out.println(e);
         }
         return -9999;
+    }
+
+    public void deleteToken(String token) {
+        String sql = "DELETE FROM \"PasswordResetToken\" WHERE \"Token\" = ?";
+        try {
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setString(1, token);
+            ps.executeUpdate();
+        } catch (SQLException e) {
+            System.out.println(e);
+        }
     }
 
     public void resetPassword(String email, String password) {
