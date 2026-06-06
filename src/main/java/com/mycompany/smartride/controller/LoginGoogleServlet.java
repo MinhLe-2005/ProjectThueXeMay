@@ -1,5 +1,5 @@
 //logout where
-//ok i saw logout.servlet
+//this is comment
 package com.mycompany.smartride.controller;
 
 import com.mycompany.smartride.constant.GoogleLogin;
